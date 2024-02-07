@@ -1,25 +1,49 @@
 # mammut
 
-TODO(b/319861712): Add a description for your new project, explain what is
-being released here, etc... Additional, the following sections are normally
-expected for all releases. Feel free to add additional sections if appropriate
-for your project.
+This is the demo of the TMLR-2023 paper ["MaMMUT: A Simple Architecture for Joint Learning for MultiModal Tasks"](https://arxiv.org/abs/2303.16839). We plan to release the original JAX/FLAX implementation and support the model on the Cloud Vertex API, where you can train and predict with this model on Google Cloud Vertex AI Training and Prediction service. Stay tuned!
 
 ## Installation
 
-Write instructions for how the user should install your code. The instructions
-should ideally be valid when copy-pasted. You can combine this with the Usage
-section if there's no separate installation step.
+We use the Python built-in virtual env to set up the environment. Run the following commands:
+```
+PATH_TO_VENV=/path/to/your/venv
+python3 -m venv ${PATH_TO_VENV}
+source ${PATH_TO_VENV}/bin/activate
+```
 
-## Usage
+Install the requirements from the root directory.
 
-Write example usage of your code. The instructions should ideally be valid when
-copy-pasted, and will be used by your technical reviewer to verify that your
-package functions correctly.
+```
+pip install -r requirements.txt
+```
+
+## Download the checkpoints.
+Run the following commands from the root directory.
+
+```
+cd ./checkpoints
+./download.sh
+```
+
+## Run the demo.
+Run the following commands from the root directory to try out the VQA demo.
+
+```
+python3 demo.py
+```
 
 ## Citing this work
 
-Add citation details here, usually a pastable BibTeX snippet.
+@article{kuo2023mammut,
+  title={MaMMUT: A simple architecture for joint learning for multimodal tasks},
+  author={Kuo, Weicheng and Piergiovanni, AJ and Kim, Dahun and Luo, Xiyang and Caine, Ben and Li, Wei and Ogale, Abhijit and Zhou, Luowei and Dai, Andrew and Chen, Zhifeng and others},
+  journal={Transactions on Machine Learning Research},
+  year={2023}
+}
+
+## Demo Image Source and License
+
+Demo images come from the public VQAv2 dataset.
 
 ## License and disclaimer
 

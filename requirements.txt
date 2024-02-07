@@ -1,0 +1,4 @@
+tensorflow>=2.14.0
+tensorflow_text>=2.15.0
+pillow>=10.2.0
+numpy>=1.26.3
