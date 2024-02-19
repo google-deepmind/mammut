@@ -34,12 +34,14 @@ python3 demo.py
 
 ## Citing this work
 
+```latex
 @article{kuo2023mammut,
   title={MaMMUT: A simple architecture for joint learning for multimodal tasks},
   author={Kuo, Weicheng and Piergiovanni, AJ and Kim, Dahun and Luo, Xiyang and Caine, Ben and Li, Wei and Ogale, Abhijit and Zhou, Luowei and Dai, Andrew and Chen, Zhifeng and others},
   journal={Transactions on Machine Learning Research},
   year={2023}
 }
+```
 
 ## Demo Image Source and License
 
