@@ -1,4 +1,4 @@
-# mammut
+# MaMMUT
 
 This is the demo of the TMLR-2023 paper ["MaMMUT: A Simple Architecture for Joint Learning for MultiModal Tasks"](https://arxiv.org/abs/2303.16839). We plan to release the original JAX/FLAX implementation and support the model on the Cloud Vertex API, where you can train and predict with this model on Google Cloud Vertex AI Training and Prediction service. Stay tuned!
 
