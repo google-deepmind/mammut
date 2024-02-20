@@ -2,6 +2,12 @@
 
 This is the demo of the TMLR-2023 paper ["MaMMUT: A Simple Architecture for Joint Learning for MultiModal Tasks"](https://arxiv.org/abs/2303.16839). We plan to release the original JAX/FLAX implementation and support the model on the Cloud Vertex API, where you can train and predict with this model on Google Cloud Vertex AI Training and Prediction service. Stay tuned!
 
+## Download the repository
+You can download the repository by git clone or downloading the zip file.
+```
+git clone https://github.com/google-deepmind/mammut.git
+```
+
 ## Installation
 
 We use the Python built-in virtual env to set up the environment. Run the following commands:
