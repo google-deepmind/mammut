@@ -18,3 +18,6 @@ set -ex
 
 wget https://storage.googleapis.com/cloud-tpu-checkpoints/mammut/mammut_vqa_model.zip
 unzip mammut_vqa_model.zip
+
+wget https://storage.googleapis.com/cloud-tpu-checkpoints/mammut/mammut_retrieval_model.zip
+unzip mammut_retrieval_model.zip

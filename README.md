@@ -26,10 +26,12 @@ cd ./checkpoints
 ```
 
 ## Run the demo.
-Run the following commands from the root directory to try out the VQA demo.
+Run the following commands from the root directory to try out the VQA demo (top) and the retrieval demo (bottom).
+The VQA demo is for visual question answering, and the retrieval demo is for image-text and text-image retrieval.
 
 ```
-python3 demo.py
+python3 vqa_demo.py
+python3 retrieval_demo.py
 ```
 
 ## Citing this work
