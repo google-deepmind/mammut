@@ -19,13 +19,16 @@
 from collections.abc import Sequence
 
 from absl import app
+from absl import flags
+
 from PIL import Image
 import tensorflow as tf
 # Enable SentencePiece op by https://github.com/tensorflow/hub/issues/463
 import tensorflow_text  # pylint:disable=unused-import
 
-
-_SAVED_MODEL_PATH = './checkpoints/mammut_vqa_model'
+_SAVED_MODEL_PATH = flags.DEFINE_string(
+    'saved_model_path', './checkpoints/mammut_vqa_model',
+    'Path to the saved model.')
 _IMAGE_QA_PAIRS = [
     ('./images/green.jpg', 'is there green in the image?'),
     ('./images/seaplane.jpg', 'is this a beach sitting?'),
@@ -55,7 +58,7 @@ def main(argv: Sequence[str]) -> None:
     raise app.UsageError('Too many command-line arguments.')
 
   generate_example = get_input()
-  model_imported = tf.saved_model.load(_SAVED_MODEL_PATH)
+  model_imported = tf.saved_model.load(_SAVED_MODEL_PATH.value)
   model_imported_fn = model_imported.signatures['serving_default']
   for example, image_path, question_text in generate_example:
     output = model_imported_fn(**example)
